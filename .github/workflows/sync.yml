@@ -11,7 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        REPO_URL: ['https://github.com/2dust/clashN.git']
+        REPO_URL:
+          - 'https://github.com/2dust/clashN.git'
 
     steps:
       - name: Clone git repository
