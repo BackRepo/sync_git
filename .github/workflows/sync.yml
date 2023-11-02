@@ -9,14 +9,14 @@ on:
 jobs:
   sync:
     runs-on: ubuntu-latest
-    env:
-      REPO_URL: "https://github.com/2dust/clashN.git"
-      REPO_NAME: "clashN"
+    strategy:
+      matrix:
+        REPO_URL: ['https://github.com/2dust/clashN.git']
 
     steps:
       - name: Clone git repository
         run: |
-          git clone $REPO_URL
+          git clone ${{ matrix.REPO_URL }}
           
       - name: Push to remote
         env:
@@ -24,6 +24,8 @@ jobs:
           GITLAB_USERMAIL: ${{ secrets.GITLAB_USERMAIL }}
           GITLAB_PASSWORD: ${{ secrets.GITLAB_PASSWORD }}
         run: |
+          export REPO_NAME=$(basename "${{ matrix.REPO_URL }}" .git)
+          
           cd $REPO_NAME
           git config user.name $GITLAB_USERNAME
           git config user.email $GITLAB_USERMAIL
