@@ -1,0 +1,31 @@
+name: Sync Git Repo
+
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron:  '0 1 * * *'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    env:
+      REPO_URL: "https://github.com/2dust/clashN.git"
+      REPO_NAME: "clashN"
+
+    steps:
+      - name: Clone git repository
+        run: |
+          git clone $REPO_URL
+          
+      - name: Push to remote
+        env:
+          GITLAB_USERNAME: ${{ secrets.GITLAB_USERNAME }}
+          GITLAB_USERMAIL: ${{ secrets.GITLAB_USERMAIL }}
+          GITLAB_PASSWORD: ${{ secrets.GITLAB_PASSWORD }}
+        run: |
+          cd $REPO_NAME
+          git config user.name $GITLAB_USERNAME
+          git config user.email $GITLAB_USERMAIL
+          git remote add gitlab https://$GITLAB_USERNAME:$GITLAB_PASSWORD@gitlab.com/mirrors_git/$REPO_NAME.git
+          git push gitlab --all
