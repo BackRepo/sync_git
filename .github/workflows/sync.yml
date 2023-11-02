@@ -26,7 +26,7 @@ jobs:
     steps:
       - name: Clone git repository
         run: |
-          git clone ${{ matrix.REPO_URL }}
+          git clone --mirror ${{ matrix.REPO_URL }}
           
       - name: Push to remote
         env:
