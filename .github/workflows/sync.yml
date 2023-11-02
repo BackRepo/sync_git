@@ -12,7 +12,7 @@ jobs:
     strategy:
       matrix:
         REPO_URL:
-          - 'https://github.com/2dust/clashN.git'
+          - 'https://github.com/2dust/v2rayN.git'
           - 'https://github.com/2dust/v2rayNG.git'
           - 'https://github.com/2dust/clashN.git'
           - 'https://github.com/v2ray/v2ray-core.git'
@@ -36,7 +36,7 @@ jobs:
         run: |
           export REPO_NAME=$(basename "${{ matrix.REPO_URL }}" .git)
           
-          cd $REPO_NAME
+          cd $REPO_NAME.git
           git config user.name $GITLAB_USERNAME
           git config user.email $GITLAB_USERMAIL
           git remote add gitlab https://$GITLAB_USERNAME:$GITLAB_PASSWORD@gitlab.com/mirrors_git/$REPO_NAME.git
