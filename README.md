@@ -1,4 +1,4 @@
-# 避难所 shelter
+# 避难所 Shelter
 
 ## 同步 Git 仓库到镜像 Sync git repository
 
