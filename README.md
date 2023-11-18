@@ -16,14 +16,6 @@ This script will run automatically every day at 01:00.
 
 本脚本每天运行
 
-## 配置 Configuration
-
-SECRET|NOTES
----|---
-GITLAB_USERNAME| Gitlab's username
-GITLAB_USERMAIL| Gitlab's email
-GITLAB_PASSWORD| Gitlab's password
-
 ## 已镜像的仓库列表 Mirrored git repository
 
 View `REPO_URL` in `matrix` in `.github/workflows/sync.yml` file
