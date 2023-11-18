@@ -22,6 +22,7 @@ jobs:
           - 'https://github.com/macronut/magisk-module-phantomsocks.git'
           - 'https://github.com/zizifn/edgetunnel.git'
           - 'https://github.com/Grasscutters/Grasscutter.git'
+          - 'https://github.com/pandora-next/deploy.git'
 
     steps:
       - name: Clone git repository
