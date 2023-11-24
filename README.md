@@ -9,13 +9,16 @@ This project is a tool for synchronizing GitHub repositories to GitLab. It can h
 ## 使用方法 / Usage
 
 1. Fork本仓库到你的GitHub账户。
-  - Fork this repository to your GitHub account.
 2. 在`.github/workflows/sync.yml`文件中，找到`jobs` -> `sync` -> `strategy` -> `matrix` -> `REPO_URL`，并将其值设置为你想要同步的GitHub仓库的URL。请注意，不要删除原有的git地址。
-  - In the `.github/workflows/sync.yml` file, find `jobs` -> `sync` -> `strategy` -> `matrix` -> `REPO_URL` and set its value to the URL of the GitHub repository you want to synchronize. Please note, do not delete the existing git addresses.
 3. 提交你的更改并推送到你的GitHub仓库。
-  - Commit your changes and push to your GitHub repository.
 4. 在GitHub上，创建一个新的Pull Request到原仓库。
-  - On GitHub, create a new Pull Request to the original repository.
+
+--- 
+
+1. Fork this repository to your GitHub account.
+2. In the `.github/workflows/sync.yml` file, find `jobs` -> `sync` -> `strategy` -> `matrix` -> `REPO_URL` and set its value to the URL of the GitHub repository you want to synchronize. Please note, do not delete the existing git addresses.
+3. Commit your changes and push to your GitHub repository.
+4. On GitHub, create a new Pull Request to the original repository.
 
 ## 配置示例 Configuration Example
 
