@@ -12,6 +12,7 @@ jobs:
     strategy:
       matrix:
         REPO_URL:
+          - 'https://github.com/lvguanjun/copilot_share.git'
           - 'https://github.com/spencerwooo/onedrive-vercel-index.git'
           - 'https://github.com/2dust/v2rayN.git'
           - 'https://github.com/2dust/v2rayNG.git'
