@@ -26,6 +26,7 @@ jobs:
           - 'https://github.com/zizifn/edgetunnel.git'
           - 'https://github.com/Grasscutters/Grasscutter.git'
           - 'https://github.com/pandora-next/deploy.git'
+          - 'https://github.com/3Kmfi6HP/EDtunnel.git'
 
     steps:
       - name: Clone git repository
