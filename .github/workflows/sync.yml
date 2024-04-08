@@ -48,6 +48,10 @@ jobs:
           git remote add gitlab https://$GITLAB_USERNAME:$GITLAB_PASSWORD@gitlab.com/mirrors_git/$REPO_NAME.git
           git push gitlab --all
 
+  visiable:
+    needs: sync
+    runs-on: ubuntu-latest
+    steps:
       - name: Change Project Visiable
         env:
           GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
