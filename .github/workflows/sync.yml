@@ -27,6 +27,7 @@ jobs:
           - 'https://github.com/Grasscutters/Grasscutter.git'
           - 'https://github.com/pandora-next/deploy.git'
           - 'https://github.com/3Kmfi6HP/EDtunnel.git'
+          - 'https://github.com/LSPosed/MagiskOnWSALocal.git'
 
     steps:
       - name: Clone git repository
