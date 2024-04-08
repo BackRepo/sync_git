@@ -47,3 +47,19 @@ jobs:
           git config user.email $GITLAB_USERMAIL
           git remote add gitlab https://$GITLAB_USERNAME:$GITLAB_PASSWORD@gitlab.com/mirrors_git/$REPO_NAME.git
           git push gitlab --all
+
+      - name: Change Project Visiable
+        env:
+          GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
+        run: |
+          TOKEN="$GITLAB_TOKEN"
+          GITLAB_URL="https://gitlab.com"
+          GROUP_ID="77318098"
+          
+          # Get the ID of all Projects in the Group
+          project_ids=$(curl --header "PRIVATE-TOKEN: $TOKEN" "$GITLAB_URL/api/v4/groups/$GROUP_ID/projects" | jq '.[].id')
+          
+          for id in $project_ids
+          do
+              curl --request PUT --header "PRIVATE-TOKEN: $TOKEN" "$GITLAB_URL/api/v4/projects/$id?visibility=public"
+          done
