@@ -14,6 +14,20 @@ jobs:
         REPO_URL:
           # Already dead repo
           # - 'https://github.com/lvguanjun/copilot_share.git'
+          
+          - 'https://github.com/tornadocash/tornado-core.git'
+          - 'https://github.com/tornadocash/tornado-cli.git'
+          - 'https://github.com/tornadocash/ui-minified.git'
+          - 'https://github.com/tornadocash/tornado-relayer.git'
+          - 'https://github.com/tornadocash/tornado-anonymity-mining.git'
+          - 'https://github.com/tornadocash/torn-token.git'
+          
+          - 'https://git.unlock-music.dev/um/web.git'
+          - 'https://git.unlock-music.dev/um/cli.git'
+          - 'https://git.unlock-music.dev/um/um-react.git'
+          - 'https://git.unlock-music.dev/um/go-mmkv.git'
+          - 'https://git.unlock-music.dev/um/um-react-wry.git'
+          
           - 'https://github.com/spencerwooo/onedrive-vercel-index.git'
           - 'https://github.com/2dust/v2rayN.git'
           - 'https://github.com/2dust/v2rayNG.git'
