@@ -4,11 +4,11 @@
 
 这个项目是一个用于同步GitHub仓库到GitLab的工具。它可以帮助你备份你的代码，防止因各种原因导致的仓库被屏蔽、下架、删除或违规。
 
-请注意，我们不允许同步包含任何政治相关内容的仓库。
+请注意，我们不允许同步包含任何政治相关内容的文档仓库。
 
 This project is a tool for synchronizing GitHub repositories to GitLab. It can help you back up your code to prevent your repositories from being blocked, removed, deleted, or violated for various reasons.
 
-Please note that we do not allow the synchronization of repositories containing any politically related content.
+Please note that we do not allow synchronizing document (e.g. full of markdown file) repositories that contain any politically relevant content.
 
 ## 使用方法 / Usage
 
