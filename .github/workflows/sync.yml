@@ -4,7 +4,7 @@ on:
   push:
   workflow_dispatch:
   schedule:
-    - cron:  '0 1 * * *'
+    - cron:  '0 3 * * *'
 
 jobs:
   sync:
@@ -14,6 +14,9 @@ jobs:
         REPO_URL:
           # Already dead repo
           # - 'https://github.com/lvguanjun/copilot_share.git'
+
+          - 'https://github.com/DiamondHunters/NodeInject.git'
+          - 'https://github.com/DiamondHunters/NodeInject_Hook_example.git'
           
           - 'https://github.com/tornadocash/tornado-core.git'
           - 'https://github.com/tornadocash/tornado-cli.git'
