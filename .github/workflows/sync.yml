@@ -86,3 +86,17 @@ jobs:
           do
               curl --request PUT --header "PRIVATE-TOKEN: $TOKEN" "$GITLAB_URL/api/v4/projects/$id?visibility=public"
           done
+  clean:
+    needs: visiable
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      contents: read
+    steps:
+      - name: Delete workflow runs
+        uses: Mattraks/delete-workflow-runs@v2
+        with:
+          token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          retain_days: 30
+          keep_minimum_runs: 6
