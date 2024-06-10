@@ -26,12 +26,13 @@ jobs:
           - 'https://github.com/tornadocash/tornado-relayer.git'
           - 'https://github.com/tornadocash/tornado-anonymity-mining.git'
           - 'https://github.com/tornadocash/torn-token.git'
-          
-          - 'https://git.unlock-music.dev/um/web.git'
-          - 'https://git.unlock-music.dev/um/cli.git'
-          - 'https://git.unlock-music.dev/um/um-react.git'
-          - 'https://git.unlock-music.dev/um/go-mmkv.git'
-          - 'https://git.unlock-music.dev/um/um-react-wry.git'
+
+          # 500 Errors in recently days
+          # - 'https://git.unlock-music.dev/um/web.git'
+          # - 'https://git.unlock-music.dev/um/cli.git'
+          # - 'https://git.unlock-music.dev/um/um-react.git'
+          # - 'https://git.unlock-music.dev/um/go-mmkv.git'
+          # - 'https://git.unlock-music.dev/um/um-react-wry.git'
           
           - 'https://github.com/spencerwooo/onedrive-vercel-index.git'
           - 'https://github.com/2dust/v2rayN.git'
@@ -48,6 +49,8 @@ jobs:
           - 'https://github.com/LSPosed/MagiskOnWSALocal.git'
           - 'https://github.com/iperov/DeepFaceLab.git'
           - 'https://github.com/deepfakes/faceswap.git'
+
+          - 'https://github.com/SeaHOH/GotoX.git'
 
     steps:
       - name: Clone git repository
@@ -70,6 +73,7 @@ jobs:
 
   visiable:
     needs: sync
+    if: always()
     runs-on: ubuntu-latest
     steps:
       - name: Change Project Visiable
@@ -89,6 +93,7 @@ jobs:
           done
   clean:
     needs: sync
+    if: always()
     runs-on: ubuntu-latest
     permissions:
       actions: write
