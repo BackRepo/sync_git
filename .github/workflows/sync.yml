@@ -51,6 +51,7 @@ jobs:
           - 'https://github.com/deepfakes/faceswap.git'
 
           - 'https://github.com/SeaHOH/GotoX.git'
+          - 'https://github.com/moesnow/March7thAssistant.git'
 
     steps:
       - name: Clone git repository
