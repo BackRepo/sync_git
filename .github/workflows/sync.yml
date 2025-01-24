@@ -16,6 +16,7 @@ jobs:
           # Already dead repo
           # - 'https://github.com/lvguanjun/copilot_share.git'
           # - 'https://github.com/pandora-next/deploy.git'
+          # - 'https://github.com/3Kmfi6HP/EDtunnel.git'
 
           - 'https://github.com/DiamondHunters/NodeInject.git'
           - 'https://github.com/DiamondHunters/NodeInject_Hook_example.git'
@@ -45,7 +46,6 @@ jobs:
           - 'https://github.com/macronut/magisk-module-phantomsocks.git'
           - 'https://github.com/zizifn/edgetunnel.git'
           - 'https://github.com/Grasscutters/Grasscutter.git'
-          - 'https://github.com/3Kmfi6HP/EDtunnel.git'
           - 'https://github.com/LSPosed/MagiskOnWSALocal.git'
           - 'https://github.com/iperov/DeepFaceLab.git'
           - 'https://github.com/deepfakes/faceswap.git'
