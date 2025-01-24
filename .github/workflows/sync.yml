@@ -52,6 +52,8 @@ jobs:
 
           - 'https://github.com/SeaHOH/GotoX.git'
           - 'https://github.com/moesnow/March7thAssistant.git'
+          
+          - 'https://github.com/x-dr/telegraph-Image.git'
 
     steps:
       - name: Clone git repository
