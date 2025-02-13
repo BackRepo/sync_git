@@ -55,6 +55,16 @@ jobs:
           
           - 'https://github.com/x-dr/telegraph-Image.git'
 
+          - 'https://github.com/SpaceTimee/Bot-CealingCat.git'
+          - 'https://github.com/SpaceTimee/Cealing-Host.git'
+          - 'https://github.com/SpaceTimee/Console-HostGenerator.git'
+          - 'https://github.com/SpaceTimee/Ona-Dop.git'
+          - 'https://github.com/SpaceTimee/Ona-Pix.git'
+          - 'https://github.com/SpaceTimee/Ona-Prox.git'
+          - 'https://github.com/SpaceTimee/Sheas-Cealer.git'
+          - 'https://github.com/SpaceTimee/Sheas-Dop.git'
+          - 'https://github.com/SpaceTimee/Sheas-Nginx.git'
+
     steps:
       - name: Clone git repository
         run: |
