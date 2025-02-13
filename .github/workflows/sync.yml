@@ -28,12 +28,14 @@ jobs:
           - 'https://github.com/tornadocash/tornado-anonymity-mining.git'
           - 'https://github.com/tornadocash/torn-token.git'
 
-          # 500 Errors in recently days
-          # - 'https://git.unlock-music.dev/um/web.git'
-          # - 'https://git.unlock-music.dev/um/cli.git'
-          # - 'https://git.unlock-music.dev/um/um-react.git'
-          # - 'https://git.unlock-music.dev/um/go-mmkv.git'
-          # - 'https://git.unlock-music.dev/um/um-react-wry.git'
+          - 'https://git.unlock-music.dev/um/web.git'
+          - 'https://git.unlock-music.dev/um/cli.git'
+          - 'https://git.unlock-music.dev/um/um-react.git'
+          - 'https://git.unlock-music.dev/um/go-mmkv.git'
+          - 'https://git.unlock-music.dev/um/um-react-wry.git'
+          - 'https://git.unlock-music.dev/um/kgg-dec.git'
+          - 'https://git.unlock-music.dev/um/lib_um_crypto_rust'
+          - 'https://git.unlock-music.dev/um/joox-crypto'
           
           - 'https://github.com/spencerwooo/onedrive-vercel-index.git'
           - 'https://github.com/2dust/v2rayN.git'
