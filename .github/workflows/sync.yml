@@ -34,8 +34,8 @@ jobs:
           - 'https://git.unlock-music.dev/um/go-mmkv.git'
           - 'https://git.unlock-music.dev/um/um-react-wry.git'
           - 'https://git.unlock-music.dev/um/kgg-dec.git'
-          - 'https://git.unlock-music.dev/um/lib_um_crypto_rust'
-          - 'https://git.unlock-music.dev/um/joox-crypto'
+          - 'https://git.unlock-music.dev/um/lib_um_crypto_rust.git'
+          - 'https://git.unlock-music.dev/um/joox-crypto.git'
           
           - 'https://github.com/spencerwooo/onedrive-vercel-index.git'
           - 'https://github.com/2dust/v2rayN.git'
@@ -66,6 +66,13 @@ jobs:
           - 'https://github.com/SpaceTimee/Sheas-Cealer.git'
           - 'https://github.com/SpaceTimee/Sheas-Dop.git'
           - 'https://github.com/SpaceTimee/Sheas-Nginx.git'
+        include:
+          - REPO_URL: 'https://git.unlock-music.dev/um/web.git'
+            GITLAB_REPO: 'web_v2'
+          - REPO_URL: 'https://git.unlock-music.dev/um/lib_um_crypto_rust.git'
+            GITLAB_REPO: 'lib_um_crypto_rust_v2'
+          - REPO_URL: 'https://github.com/SpaceTimee/Cealing-Host.git'
+            GITLAB_REPO: 'Cealing-Host_v2'
 
     steps:
       - name: Clone git repository
@@ -79,13 +86,18 @@ jobs:
           GITLAB_PASSWORD: ${{ secrets.GITLAB_PASSWORD }}
         run: |
           export REPO_NAME=$(basename "${{ matrix.REPO_URL }}" .git)
+          export GITLAB_REPO=${{ matrix.GITLAB_REPO }}
+          
+          # IF GITLAB_REPO is not given, use default path
+          if [ -z "$GITLAB_REPO" ]; then
+            GITLAB_REPO="$REPO_NAME"
+          fi
           
           cd $REPO_NAME.git
           git config user.name $GITLAB_USERNAME
           git config user.email $GITLAB_USERMAIL
-          git remote add gitlab https://$GITLAB_USERNAME:$GITLAB_PASSWORD@gitlab.com/mirrors_git/$REPO_NAME.git
+          git remote add gitlab https://$GITLAB_USERNAME:$GITLAB_PASSWORD@gitlab.com/mirrors_git/$GITLAB_REPO.git
           git push gitlab --all
-
   visiable:
     needs: sync
     if: always()
