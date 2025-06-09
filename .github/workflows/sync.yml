@@ -4,7 +4,7 @@ on:
   push:
   workflow_dispatch:
   schedule:
-    - cron:  '0 21 * * *'
+    - cron:  '30 19 */2 * *'
 
 jobs:
   sync:
@@ -72,7 +72,7 @@ jobs:
           - REPO_URL: 'https://git.unlock-music.dev/um/lib_um_crypto_rust.git'
             GITLAB_REPO: 'lib_um_crypto_rust_v2'
           - REPO_URL: 'https://github.com/SpaceTimee/Cealing-Host.git'
-            GITLAB_REPO: 'Cealing-Host_v4'
+            GITLAB_REPO: 'Cealing-Host_v5'
 
     steps:
       - name: Clone git repository
