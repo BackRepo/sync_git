@@ -66,6 +66,9 @@ jobs:
           - 'https://github.com/SpaceTimee/Sheas-Cealer.git'
           - 'https://github.com/SpaceTimee/Sheas-Dop.git'
           - 'https://github.com/SpaceTimee/Sheas-Nginx.git'
+
+          - 'https://github.com/SpotX-Official/SpotX.git'
+          - 'https://github.com/SpotX-Official/SpotX-Bash.git'
         include:
           - REPO_URL: 'https://git.unlock-music.dev/um/web.git'
             GITLAB_REPO: 'web_v2'
