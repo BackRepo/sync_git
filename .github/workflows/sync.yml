@@ -17,9 +17,9 @@ jobs:
           # - 'https://github.com/lvguanjun/copilot_share.git'
           # - 'https://github.com/pandora-next/deploy.git'
           # - 'https://github.com/3Kmfi6HP/EDtunnel.git'
+          # - 'https://github.com/DiamondHunters/NodeInject_Hook_example.git'
 
           - 'https://github.com/DiamondHunters/NodeInject.git'
-          - 'https://github.com/DiamondHunters/NodeInject_Hook_example.git'
           
           - 'https://github.com/tornadocash/tornado-core.git'
           - 'https://github.com/tornadocash/tornado-cli.git'
@@ -69,6 +69,8 @@ jobs:
 
           - 'https://github.com/SpotX-Official/SpotX.git'
           - 'https://github.com/SpotX-Official/SpotX-Bash.git'
+
+          - 'https://github.com/ikunshare/Onekey.git'
         include:
           - REPO_URL: 'https://git.unlock-music.dev/um/web.git'
             GITLAB_REPO: 'web_v2'
