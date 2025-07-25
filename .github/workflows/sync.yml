@@ -71,6 +71,8 @@ jobs:
           - 'https://github.com/SpotX-Official/SpotX-Bash.git'
 
           - 'https://github.com/ikunshare/Onekey.git'
+
+          - 'https://github.com/guozhigq/pilipala.git'
         include:
           - REPO_URL: 'https://git.unlock-music.dev/um/web.git'
             GITLAB_REPO: 'web_v2'
