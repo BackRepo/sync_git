@@ -75,10 +75,10 @@ jobs:
 
           - 'https://github.com/guozhigq/pilipala.git'
         include:
-          - REPO_URL: 'https://git.unlock-music.dev/um/web.git'
-            GITLAB_REPO: 'web_v2'
-          - REPO_URL: 'https://git.unlock-music.dev/um/lib_um_crypto_rust.git'
-            GITLAB_REPO: 'lib_um_crypto_rust_v2'
+          # - REPO_URL: 'https://git.unlock-music.dev/um/web.git'
+          #   GITLAB_REPO: 'web_v2'
+          # - REPO_URL: 'https://git.unlock-music.dev/um/lib_um_crypto_rust.git'
+          #   GITLAB_REPO: 'lib_um_crypto_rust_v2'
           - REPO_URL: 'https://github.com/SpaceTimee/Cealing-Host.git'
             GITLAB_REPO: 'Cealing-Host_v5'
           - REPO_URL: 'https://github.com/SpaceTimee/Sheas-Cealer.git'
