@@ -42,7 +42,9 @@ jobs:
           - 'https://github.com/2dust/v2rayN.git'
           - 'https://github.com/2dust/v2rayNG.git'
           - 'https://github.com/2dust/clashN.git'
-          - 'https://github.com/v2ray/v2ray-core.git'
+          # This repo move to https://github.com/v2fly/v2ray-core.git
+          # - 'https://github.com/v2ray/v2ray-core.git' 
+          - 'https://github.com/v2fly/v2ray-core.git'
           - 'https://github.com/macronut/phantomsocks.git'
           - 'https://github.com/macronut/ghostcp.git'
           - 'https://github.com/macronut/godivert.git'
