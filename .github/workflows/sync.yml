@@ -83,6 +83,8 @@ jobs:
           - 'https://github.com/akfamily/akshare.git'
 
           - 'https://github.com/VentusUta/BewlyBewly-AveMujica.git'
+
+          - 'https://github.com/rinnein/bilibili-API-collect.git'
           
         include:
           # - REPO_URL: 'https://git.unlock-music.dev/um/web.git'
