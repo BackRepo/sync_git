@@ -44,7 +44,6 @@ jobs:
           - 'https://github.com/2dust/clashN.git'
           # This repo move to https://github.com/v2fly/v2ray-core.git
           # - 'https://github.com/v2ray/v2ray-core.git' 
-          - 'https://github.com/v2fly/v2ray-core.git'
           - 'https://github.com/macronut/phantomsocks.git'
           - 'https://github.com/macronut/ghostcp.git'
           - 'https://github.com/macronut/godivert.git'
@@ -97,6 +96,9 @@ jobs:
             GITLAB_REPO: 'Cealing-Host_v5'
           - REPO_URL: 'https://github.com/SpaceTimee/Sheas-Cealer.git'
             GITLAB_REPO: 'Sheas-Cealer_v2'
+          - REPO_URL: 'https://github.com/v2fly/v2ray-core.git'
+            GITLAB_REPO: 'v2fly_v2ray-core'
+          
 
     steps:
       - name: Clone git repository
