@@ -88,6 +88,8 @@ jobs:
           - 'https://github.com/rinnein/bilibili-API-collect.git'
 
           - 'https://github.com/DDSRem-Dev/guangyaclient.git'
+
+          - 'https://github.com/JuanCMPDev/deep-proxy.git'
           
         include:
           # - REPO_URL: 'https://git.unlock-music.dev/um/web.git'
