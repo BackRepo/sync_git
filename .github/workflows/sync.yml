@@ -113,7 +113,7 @@ jobs:
         env:
           GITLAB_USERNAME: ${{ secrets.GITLAB_USERNAME }}
           GITLAB_USERMAIL: ${{ secrets.GITLAB_USERMAIL }}
-          GITLAB_PASSWORD: ${{ secrets.GITLAB_PASSWORD }}
+          GITLAB_PUSH_TOKEN: ${{ secrets.GITLAB_PUSH_TOKEN }}
         run: |
           export REPO_NAME=$(basename "${{ matrix.REPO_URL }}" .git)
           export GITLAB_REPO=${{ matrix.GITLAB_REPO }}
@@ -126,7 +126,7 @@ jobs:
           cd $REPO_NAME.git
           git config user.name $GITLAB_USERNAME
           git config user.email $GITLAB_USERMAIL
-          git remote add gitlab https://$GITLAB_USERNAME:$GITLAB_PASSWORD@gitlab.com/mirrors_git/$GITLAB_REPO.git
+          git remote add gitlab https://$GITLAB_USERNAME:$GITLAB_PUSH_TOKEN@gitlab.com/mirrors_git/$GITLAB_REPO.git
           git push gitlab --all
   visiable:
     needs: sync
@@ -135,9 +135,9 @@ jobs:
     steps:
       - name: Change Project Visiable
         env:
-          GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
+          GITLAB_VISIABLE_TOKEN: ${{ secrets.GITLAB_VISIABLE_TOKEN }}
         run: |
-          TOKEN="$GITLAB_TOKEN"
+          TOKEN="$GITLAB_VISIABLE_TOKEN"
           GITLAB_URL="https://gitlab.com"
           GROUP_ID="77318098"
           
