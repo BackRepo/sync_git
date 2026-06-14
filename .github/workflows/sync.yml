@@ -62,7 +62,7 @@ jobs:
           - 'https://github.com/SpaceTimee/Bot-CealingCat.git'
           - 'https://github.com/SpaceTimee/Cealing-Host.git'
           - 'https://github.com/SpaceTimee/Console-HostGenerator.git'
-          - 'https://github.com/SpaceTimee/Ona-Dop.git'
+          # - 'https://github.com/SpaceTimee/Ona-Dop.git'
           - 'https://github.com/SpaceTimee/Ona-Pix.git'
           - 'https://github.com/SpaceTimee/Ona-Prox.git'
           - 'https://github.com/SpaceTimee/Sheas-Cealer.git'
