@@ -92,6 +92,8 @@ jobs:
           - 'https://github.com/JuanCMPDev/deep-proxy.git'
 
           - 'https://github.com/CJackHwang/ds2api.git'
+
+          - 'https://github.com/macronut/ghostcp.git'
           
         include:
           # - REPO_URL: 'https://git.unlock-music.dev/um/web.git'
