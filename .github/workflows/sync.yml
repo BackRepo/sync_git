@@ -37,6 +37,15 @@ jobs:
           # - 'https://git.unlock-music.dev/um/kgg-dec.git'
           # - 'https://git.unlock-music.dev/um/lib_um_crypto_rust.git'
           # - 'https://git.unlock-music.dev/um/joox-crypto.git'
+
+          - 'https://git.um-react.app/um/cli.git'
+          - 'https://git.um-react.app/um/go-mmkv.git'
+          - 'https://git.um-react.app/um/um-react.git'
+          - 'https://git.um-react.app/um/um-react-wry.git'
+          - 'https://git.um-react.app/um/joox-crypto.git'
+          - 'https://git.um-react.app/um/web.git'
+          - 'https://git.um-react.app/um/hwyy-frida-dump.git'
+          - 'https://git.um-react.app/um/lib_um_crypto_rust.git'
           
           - 'https://github.com/spencerwooo/onedrive-vercel-index.git'
           - 'https://github.com/2dust/v2rayN.git'
