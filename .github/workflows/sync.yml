@@ -43,9 +43,7 @@ jobs:
           - 'https://git.um-react.app/um/um-react.git'
           - 'https://git.um-react.app/um/um-react-wry.git'
           - 'https://git.um-react.app/um/joox-crypto.git'
-          - 'https://git.um-react.app/um/web.git'
           - 'https://git.um-react.app/um/hwyy-frida-dump.git'
-          - 'https://git.um-react.app/um/lib_um_crypto_rust.git'
           
           - 'https://github.com/spencerwooo/onedrive-vercel-index.git'
           - 'https://github.com/2dust/v2rayN.git'
@@ -109,6 +107,11 @@ jobs:
           #   GITLAB_REPO: 'web_v2'
           # - REPO_URL: 'https://git.unlock-music.dev/um/lib_um_crypto_rust.git'
           #   GITLAB_REPO: 'lib_um_crypto_rust_v2'
+          - REPO_URL: 'https://git.um-react.app/um/web.git'
+            GITLAB_REPO: 'um_web_v2'
+          - REPO_URL: 'https://git.um-react.app/um/lib_um_crypto_rust.git'
+            GITLAB_REPO: 'um_lib_um_crypto_rust_v2'
+          
           - REPO_URL: 'https://github.com/SpaceTimee/Cealing-Host.git'
             GITLAB_REPO: 'Cealing-Host_v5'
           - REPO_URL: 'https://github.com/SpaceTimee/Sheas-Cealer.git'
@@ -117,6 +120,8 @@ jobs:
             GITLAB_REPO: 'v2fly_v2ray-core_v2'
           - REPO_URL: 'https://github.com/SpaceTimee/Ona-Dop.git'
             GITLAB_REPO: 'SpaceTimee_Ona-Dop_v2'
+
+            
           
 
     steps:
