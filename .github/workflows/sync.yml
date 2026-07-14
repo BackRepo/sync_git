@@ -66,7 +66,7 @@ jobs:
           
           - 'https://github.com/x-dr/telegraph-Image.git'
 
-          - 'https://github.com/SpaceTimee/Bot-CealingCat.git'
+          # - 'https://github.com/SpaceTimee/Bot-CealingCat.git'
           - 'https://github.com/SpaceTimee/Cealing-Host.git'
           - 'https://github.com/SpaceTimee/Console-HostGenerator.git'
           # - 'https://github.com/SpaceTimee/Ona-Dop.git'
@@ -120,6 +120,8 @@ jobs:
             GITLAB_REPO: 'v2fly_v2ray-core_v2'
           - REPO_URL: 'https://github.com/SpaceTimee/Ona-Dop.git'
             GITLAB_REPO: 'SpaceTimee_Ona-Dop_v2'
+          - REPO_URL: 'https://github.com/SpaceTimee/Bot-CealingCat.git'
+            GITLAB_REPO: 'SpaceTimee_Bot-CealingCat_v2'
 
             
           
