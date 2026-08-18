@@ -101,6 +101,8 @@ jobs:
           - 'https://github.com/CJackHwang/ds2api.git'
 
           - 'https://github.com/macronut/ghostcp.git'
+
+          - 'https://github.com/electkismet/eltdx.git'
           
         include:
           # - REPO_URL: 'https://git.unlock-music.dev/um/web.git'
