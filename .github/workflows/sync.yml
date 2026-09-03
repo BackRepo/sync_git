@@ -119,7 +119,7 @@ jobs:
           - REPO_URL: 'https://github.com/SpaceTimee/Sheas-Cealer.git'
             GITLAB_REPO: 'Sheas-Cealer_v2'
           - REPO_URL: 'https://github.com/v2fly/v2ray-core.git'
-            GITLAB_REPO: 'v2fly_v2ray-core_v3'
+            GITLAB_REPO: 'v2fly_v2ray-core_v4'
           - REPO_URL: 'https://github.com/SpaceTimee/Ona-Dop.git'
             GITLAB_REPO: 'SpaceTimee_Ona-Dop_v3'
           - REPO_URL: 'https://github.com/SpaceTimee/Bot-CealingCat.git'
