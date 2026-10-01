@@ -103,6 +103,9 @@ jobs:
           - 'https://github.com/macronut/ghostcp.git'
 
           - 'https://github.com/electkismet/eltdx.git'
+
+          - 'https://github.com/Johnsheng1/codearts2api.git'
+          - 'https://github.com/HITZY2002/codearts2api.git'
           
         include:
           # - REPO_URL: 'https://git.unlock-music.dev/um/web.git'
