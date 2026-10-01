@@ -104,8 +104,7 @@ jobs:
 
           - 'https://github.com/electkismet/eltdx.git'
 
-          - 'https://github.com/Johnsheng1/codearts2api.git'
-          - 'https://github.com/HITZY2002/codearts2api.git'
+
           
         include:
           # - REPO_URL: 'https://git.unlock-music.dev/um/web.git'
@@ -127,7 +126,10 @@ jobs:
             GITLAB_REPO: 'SpaceTimee_Ona-Dop_v3'
           - REPO_URL: 'https://github.com/SpaceTimee/Bot-CealingCat.git'
             GITLAB_REPO: 'SpaceTimee_Bot-CealingCat_v2'
-
+          - REPO_URL: 'https://github.com/Johnsheng1/codearts2api.git'
+            GITLAB_REPO: 'Johnsheng1_codearts2api'
+          - REPO_URL: 'https://github.com/HITZY2002/codearts2api.git'
+            GITLAB_REPO: 'HITZY2002_codearts2api'
             
           
 
