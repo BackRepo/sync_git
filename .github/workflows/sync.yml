@@ -84,13 +84,10 @@ jobs:
           - 'https://github.com/guozhigq/pilipala.git'
 
           - 'https://github.com/oficcejo/tdx-api.git'
-          - 'https://github.com/injoyai/tdx.git'
           - 'https://github.com/shidenggui/easyquant.git'
           - 'https://github.com/shidenggui/easyquotation.git'
           - 'https://github.com/shidenggui/easytrader.git'
           - 'https://github.com/akfamily/akshare.git'
-
-          - 'https://github.com/VentusUta/BewlyBewly-AveMujica.git'
 
           - 'https://github.com/rinnein/bilibili-API-collect.git'
 
@@ -130,6 +127,11 @@ jobs:
             GITLAB_REPO: 'Johnsheng1_codearts2api'
           - REPO_URL: 'https://github.com/HITZY2002/codearts2api.git'
             GITLAB_REPO: 'HITZY2002_codearts2api'
+          - REPO_URL: 'https://github.com/VentusUta/BewlyBewly-AveMujica.git'
+            GITLAB_REPO: 'VentusUta_BewlyBewly-AveMujica_v2'
+          - REPO_URL: 'https://github.com/injoyai/tdx.git'
+            GITLAB_REPO: 'injoyai_tdx_v2'
+            
             
           
 
