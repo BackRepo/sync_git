@@ -99,8 +99,6 @@ jobs:
 
           - 'https://github.com/macronut/ghostcp.git'
 
-          - 'https://github.com/electkismet/eltdx.git'
-
 
           
         include:
@@ -118,7 +116,7 @@ jobs:
           - REPO_URL: 'https://github.com/SpaceTimee/Sheas-Cealer.git'
             GITLAB_REPO: 'Sheas-Cealer_v2'
           - REPO_URL: 'https://github.com/v2fly/v2ray-core.git'
-            GITLAB_REPO: 'v2fly_v2ray-core_v4'
+            GITLAB_REPO: 'v2fly_v2ray-core_v5'
           - REPO_URL: 'https://github.com/SpaceTimee/Ona-Dop.git'
             GITLAB_REPO: 'SpaceTimee_Ona-Dop_v3'
           - REPO_URL: 'https://github.com/SpaceTimee/Bot-CealingCat.git'
@@ -131,6 +129,8 @@ jobs:
             GITLAB_REPO: 'VentusUta_BewlyBewly-AveMujica_v2'
           - REPO_URL: 'https://github.com/injoyai/tdx.git'
             GITLAB_REPO: 'injoyai_tdx_v2'
+          - REPO_URL: 'https://github.com/electkismet/eltdx.git'
+            GITLAB_REPO: 'electkismet_eltdx_v2'
             
             
           
